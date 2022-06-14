@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from sklearn import metrics
 from sklearn.metrics import (
     ConfusionMatrixDisplay,
     PrecisionRecallDisplay,
@@ -21,3 +22,14 @@ def plot_classifier_results(classifier, X, y_true, y_pred = None, y_pred_proba =
         RocCurveDisplay.from_predictions(y_true, y_pred_proba, ax=ax[2])
 
     plt.show()
+
+# Stock les différentes métriques dans un dictionnaire
+def getMetrics(y_true, y_pred, y_pred_proba, training_time, predict_time):
+    return {
+            "f1 score": metrics.f1_score(y_true, y_pred),
+            "accuracy": metrics.accuracy_score(y_true, y_pred),
+            "recall": metrics.recall_score(y_true, y_pred),
+            "AUC": metrics.roc_auc_score(y_true, y_pred_proba),
+            "Training time": training_time,
+            "Predict time": predict_time
+        }
