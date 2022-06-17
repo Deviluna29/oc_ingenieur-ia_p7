@@ -1,6 +1,6 @@
 ## Article de blog
 
-Présentation et comparaison des trois approches : <a href = https://rlgmachinelearning.wordpress.com/2022/06/09/detectez-les-bad-buzz-grace-au-deep-learning/>https://rlgmachinelearning.wordpress.com</a>
+Présentation et comparaison des trois approches : <a href = https://rlgmachinelearning.wordpress.com/2022/06/09/detectez-les-bad-buzz-grace-au-deep-learning/>rlgmachinelearning wordpress</a>
 
 ## Résultats des Notebooks sous format HTML
 
