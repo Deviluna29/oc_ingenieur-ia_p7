@@ -134,4 +134,6 @@ dmypy.json
 #data
 *.csv
 models/
+my_dir/
 *.txt
+*.zip
